@@ -611,8 +611,8 @@
                 resultsDiv.innerHTML = '';
 
                 // Cek apakah input minimal 5 huruf
-                if (searchTerm.length < 5) {
-                    resultsDiv.innerHTML = '<p>Ketik minimal 5 huruf untuk mencari.</param>';
+                if (searchTerm.length < 0) {
+                    resultsDiv.innerHTML = '<p>Ketik minimal 0 huruf untuk mencari.</param>';
                     return;
                 }
 
