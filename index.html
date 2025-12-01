@@ -592,7 +592,7 @@
 
                 // Tambah prestasi
                 if (nomination && event && level) {
-                    studentAchievements[normalizedName].achievements.push(`${nomination} ${event} ${level} ${proof}`);
+                    studentAchievements[normalizedName].achievements.push(`${nomination} ${event} ${level} | <a href="${proof}">${proof}/a>`);
                     totalAchievements++; // Menambahkan ke total prestasi
                 }
 
