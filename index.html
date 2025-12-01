@@ -572,6 +572,7 @@
                 const nomination = row[6] || '';
                 const event = row[2] || '';
                 const level = row[3] || '';
+                const proof = row[5] || '';
                 const category = row[7] || '';
                 const kelas = row[1] || '';
 
@@ -591,7 +592,7 @@
 
                 // Tambah prestasi
                 if (nomination && event && level) {
-                    studentAchievements[normalizedName].achievements.push(`${nomination} ${event} ${level}`);
+                    studentAchievements[normalizedName].achievements.push(`${nomination} ${event} ${level} ${proof}`);
                     totalAchievements++; // Menambahkan ke total prestasi
                 }
 
